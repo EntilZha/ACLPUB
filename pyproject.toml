@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "aclpub_check"
+version = "0.1.0"
+description = ""
+authors = ["Pedro Rodriguez <me@pedro.ai>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pdfrw = "^0.4"
+tqdm = "^4.60.0"
+termcolor = "^1.1.0"
+pdfplumber = "^0.5.27"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+acl_pubcheck_formatchecker = 'aclpub_check.formatchecker:main'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
